@@ -1,3 +1,6 @@
+/*El usuario, Correo Electrónico es: test@sistema.com y su contraseña es: Password1! coloque eso en Iniciar sesion
+para que ingrese, si se equivoca en la contraseña le saltara el enlace de: olvido su contraseña.
+Dado que para registrarse necesitariamos una base de datos para convalidar en tiempo real */
 let userData = {
     'test@sistema.com': { 
         nombre: 'Usuario de Prueba', 
@@ -110,5 +113,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (iconEyeClosed) iconEyeClosed.classList.remove('hidden'); 
         if (iconEyeOpen) iconEyeOpen.classList.add('hidden');
     });
+
 
 });
