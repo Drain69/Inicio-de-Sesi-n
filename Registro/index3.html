@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperación de Contraseña</title>
+    <link rel="stylesheet" href="../Diseño/style3.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="module">
+            <h1 class="app-title">Mi Aplicación</h1>
+            <h2>Establecer Nueva Contraseña</h2>
+            
+            <form id="formRecuperacion">
+                
+                <div class="input-group">
+                    <label for="nuevaContrasena">Nueva Contraseña</label>
+                    <div class="password-container">
+                        <input type="password" placeholder="Mín. 6 caracteres, Mayús, Minús, Número, Símbolo" id="nuevaContrasena" required>
+                        <span class="toggle-password" data-target="nuevaContrasena">
+                            <svg class="icon-eye-closed" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 13c-3.03 0-5.5-2.47-5.5-5.5s2.47-5.5 5.5-5.5 5.5 2.47 5.5 5.5-2.47 5.5-5.5 5.5zm0-9c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5z" fill="#5D7C79"/>
+                            </svg>
+                            <svg class="icon-eye-open hidden" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7c-2.43 0-4.5 2.07-4.5 4.5s2.07 4.5 4.5 4.5 4.5-2.07 4.5-4.5-2.07-4.5-4.5-4.5zm0 8c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5zM12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5z" fill="#5D7C79"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmarContrasena">Confirmar Contraseña</label>
+                    <div class="password-container">
+                        <input type="password" placeholder="Repita la nueva contraseña" id="confirmarContrasena" required>
+                        <span class="toggle-password" data-target="confirmarContrasena">
+                             <svg class="icon-eye-closed" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 13c-3.03 0-5.5-2.47-5.5-5.5s2.47-5.5 5.5-5.5 5.5 2.47 5.5 5.5-2.47 5.5-5.5 5.5zm0-9c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5z" fill="#5D7C79"/>
+                            </svg>
+                            <svg class="icon-eye-open hidden" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7c-2.43 0-4.5 2.07-4.5 4.5s2.07 4.5 4.5 4.5 4.5-2.07 4.5-4.5-2.07-4.5-4.5-4.5zm0 8c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5zM12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7-5z" fill="#5D7C79"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+                <div id="validation-rules" class="validation-rules">
+                    <p>La contraseña debe contener:</p>
+                    <ul>
+                        <li id="rule-length">Mínimo 6 caracteres</li>
+                        <li id="rule-upper">Al menos una mayúscula (A-Z)</li>
+                        <li id="rule-lower">Al menos una minúscula (a-z)</li>
+                        <li id="rule-number">Al menos un número (0-9)</li>
+                        <li id="rule-symbol">Al menos un carácter especial/símbolo</li>
+                    </ul>
+                </div>
+
+                <button type="submit" class="btn primary-btn" id="btnActualizar">
+                    Actualizar Contraseña
+                </button>
+            </form>
+
+            <div id="mensaje" class="message hidden" role="alert"></div>
+
+            <div class="links">
+                <a href="../index.html">Volver al Inicio de Sesión</a>
+            </div>
+        </div>
+    </div>
+
+<script src="../Script/script3.js"></script>
+</body>
+</html>
