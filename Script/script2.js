@@ -90,12 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bloqueado: false
         };
 
-        displayMessage('register-message', '✅ Cuenta creada con éxito. Redireccionando al Login...', false);
-        document.getElementById('register-form').reset();
-
-        setTimeout(() => {
-            window.location.href = '../index.html'; 
-        }, 2000);
+        displayMessage('register-message', '✅ Cuenta creada con éxito!', false);
     });
     
     toggleButtons.forEach(toggle => {
@@ -105,5 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (iconEyeClosed) iconEyeClosed.classList.remove('hidden'); 
         if (iconEyeOpen) iconEyeOpen.classList.add('hidden');
     });
+
 
 });
